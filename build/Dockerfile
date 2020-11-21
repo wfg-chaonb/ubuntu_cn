@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER wufeigui@foxmail.com
 WORKDIR /root
-COPY sources.list /etc/apt/sources.list.d/alibaba.list
+COPY sources.list /etc/apt/
 RUN  apt-get update 
 RUN  apt-get install libc-bin debconf locales -y \
 	&& apt-get install -y language-pack-zh-hans \
